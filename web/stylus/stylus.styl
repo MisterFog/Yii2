@@ -1,0 +1,23 @@
+@import 'slider'
+@import 'entry_page'
+
+/* Media queries mixins */
+wide()
+    @media (min-width: 1400px)
+        {block}
+desktop()
+    @media (max-width: 1310px)
+        {block}
+laptop()
+    @media (max-width: 1023px)
+        {block}
+tablet()
+    @media (max-width: 768px)
+        {block}
+phone()
+    @media (max-width: 480px)
+        {block}
+
+center()
+    absolute top 50% left 50%
+    transform translate(-50%, -50%)

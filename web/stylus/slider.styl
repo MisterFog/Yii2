@@ -1,0 +1,86 @@
+.slider_wrap     
+    width: 100%;
+
+    .slider_deep
+        position: relative;
+        width: calc(100% / 2);
+        margin: auto;
+        color: #00001a;
+        opacity: 1;
+        
+        &-card 
+            height: calc(100vw / 3.8);
+            max-height: 350px;
+
+            &_background
+                width: 96%;
+                padding-bottom:calc(100vh / 2.5);
+                position: absolute;
+                background-size: cover; 
+                background-repeat: no-repeat; 
+                background-position: 50% center;
+                opacity: 0.7;
+                z-index: -1;
+
+            &_content
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                .btn
+                    width: fit-content;
+                    margin: auto;
+                    z-index: 1;
+            
+        .slider__next 
+            height: 30px;
+            width: 30px;
+            border-radius 50%
+            position: absolute;
+            background-color: rgb(131,58,180);
+            border-color: whitesmoke;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='53' viewBox='0 0 30 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 51l25-24.5L2 2' stroke='%23969696' stroke-width='3'/%3E%3C/svg%3E");
+            background-position: 0;
+            right: -9%;
+            top: 50%;
+
+            &:hover 
+                background-color: #542574;
+                border-color: whitesmoke;
+
+
+        .slider__prev 
+            height: 30px;
+            width: 30px;
+            border-radius 50%
+            position: absolute;
+            background-color: rgb(131,58,180);
+            border-color: whitesmoke;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='53' viewBox='0 0 30 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 2L3 26.5 28 51' stroke='%23969696' stroke-width='3'/%3E%3C/svg%3E");
+            background-position: 0;
+            background-repeat: no-repeat;
+            left: -6%;
+            top: 50%;
+
+            &:hover 
+                background-color: #542574;
+                border-color: whitesmoke;
+
+.container
+    color whitesmoke
+    .table-striped > tbody > tr
+        &:nth-of-type(odd)
+            color #000
+
+.jumbotron
+    background rgb(131,58,180)
+    background linear-gradient(38deg, rgba(131,58,180,0.927608543417367) 1%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 97%)
+
+.parallax-mirror
+    z-index 1 !important
+    border-radius 9px
+
+.wrap_background
+    position absolute
+    width 100vw
+
+
